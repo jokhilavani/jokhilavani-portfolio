@@ -27,7 +27,7 @@ function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-10 text-gray-300 font-medium">
-          <a href="#top" className="hover:text-cyan-400 transition">Home</a>
+          <a href="#home" className="hover:text-cyan-400 transition">Home</a>
           <a href="#about" className="hover:text-cyan-400 transition">About</a>
           <a href="#skills" className="hover:text-cyan-400 transition">Skills</a>
           <a href="#projects" className="hover:text-cyan-400 transition">Projects</a>
@@ -69,20 +69,24 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="
-          md:hidden
-          mt-4
-          rounded-3xl
-          bg-black/90
-          backdrop-blur-xl
-          border border-white/10
-          p-6
-          flex flex-col
-          gap-6
-          text-center
-          text-white
-        ">
-          <a href="#top" onClick={() => setMenuOpen(false)}>Home</a>
+  <div className="
+    md:hidden
+    absolute
+    top-20
+    left-0
+    w-full
+    bg-black/95 dark:bg-black/95
+    backdrop-blur-xl
+    border border-white/10
+    rounded-3xl
+    p-6
+    flex flex-col
+    gap-6
+    text-center
+    text-white
+    shadow-2xl
+  ">
+          <a href="#home" onClick={() => setMenuOpen(false)}>Home</a>
           <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
           <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
           <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
